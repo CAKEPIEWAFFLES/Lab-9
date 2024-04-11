@@ -1,7 +1,11 @@
 # Emry Dubarry
-from decode import decode
+
 stored = ['--------']
 
+def decode(password):
+    for i in range(len(password)):
+        password[i] += 3
+    return password
 
 def encode(password):
     string = ""
